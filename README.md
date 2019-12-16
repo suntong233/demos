@@ -1,6 +1,6 @@
 
 ## 响应式demo
 
-* https://suntong233.github.io/demos/xys
+* https://suntong233.github.io/demos/xys/test.html
 
 
