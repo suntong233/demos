@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <div class="logo">
+                <img src="https://i01piccdn.sogoucdn.com/649744639c5027ca" alt="">
+            </div>
+            <div class="search">
+
+            </div>
+            <div class="l-hidden m-hidden s-hidden" id="showNav">
+                <div class="showNavbtn">
+
+                </div>
+            </div>
+            <div id="nav" class="nav-container xs-hidden">
+                <div class="nav-container-item">导航1</div>
+                <div class="nav-container-item">导航2</div>
+                <div class="nav-container-item">导航3</div>
+                <div class="nav-container-item">导航4</div>
+                <div class="nav-container-item">导航5</div>
+            </div>
+        </header>
+        <main class="main">
+            响应式字体
+        </main>
+    </div>
+    
+</body>
+
+<script>
+    let showNav = document.querySelector("#showNav")
+    let nav = document.querySelector("#nav")
+    showNav.addEventListener('click', (e) => {
+        nav.classList.toggle('xs-hidden')
+        let temp = showNav.children[0]
+        temp.classList.toggle('showNavbtn')
+        temp.classList.toggle('showNavbtn-active')
+    })
+</script>
+
+</html>
